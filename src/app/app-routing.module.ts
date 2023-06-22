@@ -1,7 +1,19 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from './home/home.component';
+import { AddvehileentryComponent } from './addvehileentry/addvehileentry.component';
+import { ViewtollComponent } from './viewtoll/viewtoll.component';
+import { AddtollComponent } from './addtoll/addtoll.component';
+import { DisplaynewvehicleComponent } from './displaynewvehicle/displaynewvehicle.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+
+  {path:'',redirectTo:'home',pathMatch:"full"},
+  {path:'home',component:DisplaynewvehicleComponent},
+  {path:'addvehicleentry',component:AddvehileentryComponent},
+  {path:'addtoll',component:AddtollComponent},
+  {path:'viewtolls',component:ViewtollComponent },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

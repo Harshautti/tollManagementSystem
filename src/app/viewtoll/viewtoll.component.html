@@ -1,0 +1,25 @@
+<div class="container">
+    <table class="table">
+        <thead >
+            <tr>
+                <th>TOLL NAME</th>
+                <th>CAR/JEEP/VAN</th>
+                <th>LCV</th>
+                <th>TRUCK/BUS</th>
+                <th> HEAVY VEHICLE</th>
+                <th >DELETE</th>  
+            </tr>
+        </thead>
+        <tbody *ngFor="let data of tolldata ;index as i">
+            <tr>
+                <td>{{data.tollname}}</td>
+                <td>{{data.carjeepvan}}</td>
+                <td>{{data.LCV}}</td>
+                <td>{{data.truck}}</td>
+                <td>{{data.heavyvehicle}}</td>
+                <th scope="col"><button class="btn btn-danger" (click)="deletetoll(i)" >DELETE</button></th>
+            </tr>
+        </tbody>
+    </table>
+    
+</div>

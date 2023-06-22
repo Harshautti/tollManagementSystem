@@ -1,0 +1,22 @@
+<div class="container">
+    <button class="btn btn-danger" (click)="closedialog()">x</button>
+    <h3>Add New Entry</h3>
+    <form>
+        <label for="" class="text-center">Select Toll Name</label>
+        <select name="tollname" id="" [(ngModel)]="tollname">
+           <option value="" selected>Select Tollname</option>
+            <option *ngFor="let tollname of tollnameoption">{{tollname}}</option>
+        </select>
+        <label for="" class="text-center">Select Vehicle Type</label>
+        <select name="vehicletype" id="" [(ngModel)]="vehicle">
+            <option value="" selected>Select Your Vehicle</option>
+            <option  *ngFor="let vehicle of selectvehicletype">{{vehicle}}</option>
+        </select>
+        <label for="" class="text-center">Vehicle Number</label>
+        <input type="text" placeholder="Vehicle Number" name="vehiclenumber" [(ngModel)]="vehiclenumber">
+        <label for="" class="text-center">Tariff</label>
+        <input type="number" placeholder="Amount" name="amount" [(ngModel)]=amount>
+        <button class="btn btn-success" (click)="newvehicle()">Submit</button>
+         
+    </form>
+</div>

@@ -1,0 +1,14 @@
+<div class="container">
+    <h1 class="text-primary text-center mt-4">Toll Management</h1>
+<hr>
+<nav class="navbar">
+    <span>Toll entries/vehicle</span>
+    <input type="text" name="search" [(ngModel)]="search">
+    <button class="btn btn-success" (click)="searchinput()">search</button>
+    <a routerLink="/home" routerLinkActive="active">home</a>
+    <a routerLink="/addvehicleentry" routerLinkActive="active" (click)="addnewentry()">Add vehicle entry</a>
+    <a routerLink="/addtoll" routerLinkActive="active" (click)="addtoll()"> Add Toll</a>
+    <a routerLink="/viewtolls" routerLinkActive="active">view all Tolls</a>
+</nav>
+</div>
+

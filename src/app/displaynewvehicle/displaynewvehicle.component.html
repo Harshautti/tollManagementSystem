@@ -1,0 +1,22 @@
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>VEHICLE TYPE</th>
+                <th>VEHICLE NUMBER</th>
+                <th>DATE/TIME</th>
+                <th>TOLLNAME</th>
+                <th>TARIFF</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let vehicle of newvehicle">
+                <td>{{vehicle.vehicletype}}</td>
+                <td>{{vehicle.vehiclenumber}}</td>
+                <td>{{vehicle.datetime}}</td>
+                <td>{{vehicle.tollname}}</td>
+                <td>{{vehicle.tariff}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

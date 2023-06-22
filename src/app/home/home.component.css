@@ -1,0 +1,13 @@
+.active{
+    background-color: gray;
+    color: white;
+    text-decoration: none;
+    padding: 4px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar a{
+    text-decoration: none;
+}

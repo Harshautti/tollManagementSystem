@@ -1,0 +1,44 @@
+<div class="container">
+    <button class="btn btn-danger float-right" (click)="closedialog()">x</button>
+    <h3 class="text-secondary text-center">Add New Toll</h3>
+    <form >
+        <label for="">Toll Name</label>
+        <input type="text" name="tollname" placeholder="Enter Toll Name" [(ngModel)]="tollname">
+        <div class="faildetails">
+            <label for="">Vehicle Fare Details</label>
+           <div class="toll_1">
+            <select name="vehicle_1" id="" [(ngModel)]="vehicle_1">
+                <option value="" selected>Select Vehicle Type</option>
+                <option value="" *ngFor="let option of options" [value]="option.value">{{option.value}}</option>
+            </select>
+            <input type="number" placeholder="Single Journey" name="single_1" [(ngModel)]=single_1>
+            <input type="number" placeholder="Return Journey" name="return_1" [(ngModel)]="return_1">
+           </div>
+           <div class="toll_2" >
+            <select name="vehicle_2" id="" [(ngModel)]="vehicle_2">
+                <option value="" selected>Select Vehicle Type</option>
+                <option value="" *ngFor="let option of options" [value]="option.value">{{option.value}}</option>
+            </select>
+            <input type="number" placeholder="Single Journey" name="single_2" [(ngModel)]=single_2>
+            <input type="number" placeholder="Return Journey" name="return_2" [(ngModel)]="return_2">
+         </div>
+         <div class="toll_3" >
+            <select name="vehicle_3" id="" [(ngModel)]="vehicle_3">
+                <option value="" selected>Select Vehicle Type</option>
+                <option value="" *ngFor="let option of options" [value]="option.value">{{option.value}}</option>
+            </select>
+            <input type="number" placeholder="Single Journey" name="single_3" [(ngModel)]=single_3>
+            <input type="number" placeholder="Return Journey" name="return_3" [(ngModel)]="return_3">
+         </div>
+         <div class="toll_4" >
+            <select name="vehicle_4" id="" [(ngModel)]="vehicle_4">
+                <option value="" selected>Select Vehicle Type</option>
+                <option value="" *ngFor="let option of options" [value]="option.value">{{option.value}}</option>
+            </select>
+            <input type="number" placeholder="Single Journey" name="single_4" [(ngModel)]=single_4>
+            <input type="number" placeholder="Return Journey" name="return_4" [(ngModel)]="return_4">
+         </div>
+        </div>
+        <button class="btn btn-success" (click)="tolldata()">submit</button>
+    </form>
+</div>
